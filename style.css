@@ -40,6 +40,7 @@ body {
   padding: 40px 20px;
 }
 
+
 /* ============================================
    КАРТОЧКА — главный блок
    ============================================ */
@@ -204,15 +205,128 @@ body {
   border-radius: 50px;
   transition: all 0.3s ease;
 }
-
 .link:hover {
   background: var(--color-accent);
   color: white;
 }
 
 /* ============================================
+   ПОРТФОЛИО — страница с карточками работ
+   ============================================ */
+
+/* Обёртка страницы портфолио */
+.portfolio-page {
+  max-width: 960px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* Шапка портфолио */
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 48px;
+  animation: fadeUp 0.8s ease-out;
+}
+
+/* Сетка карточек — flexbox с переносом */
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;            /* карточки переносятся на новую строку */
+  gap: 24px;                  /* расстояние между карточками */
+  justify-content: center;    /* центрируем карточки */
+  margin-bottom: 48px;
+}
+
+/* Одна карточка портфолио */
+.portfolio-card {
+  background: var(--color-card);
+  border-radius: 20px;
+  padding: 32px 28px;
+  width: 280px;               /* фиксированная ширина карточки */
+  text-align: center;
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.06),
+    0 1px 4px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+  animation: fadeUp 0.8s ease-out;
+}
+
+/* При наведении карточка чуть поднимается */
+.portfolio-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 12px 36px rgba(0, 0, 0, 0.1),
+    0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Задержка анимации для каждой карточки — эффект «волны» */
+.portfolio-card:nth-child(1) { animation-delay: 0s; }
+.portfolio-card:nth-child(2) { animation-delay: 0.1s; }
+.portfolio-card:nth-child(3) { animation-delay: 0.2s; }
+.portfolio-card:nth-child(4) { animation-delay: 0.3s; }
+.portfolio-card:nth-child(5) { animation-delay: 0.4s; }
+.portfolio-card:nth-child(6) { animation-delay: 0.5s; }
+
+/* Иконка-эмодзи в карточке */
+.portfolio-card-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+/* Заголовок карточки */
+.portfolio-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 10px;
+}
+
+/* Описание проекта */
+.portfolio-card-desc {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--color-text-light);
+  margin-bottom: 16px;
+}
+
+/* Теги внутри карточки портфолио */
+.portfolio-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+/* Кнопка «Смотреть» в карточке */
+.portfolio-card-link {
+  display: inline-block;
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 8px 20px;
+  border: 2px solid var(--color-accent);
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.portfolio-card-link:hover {
+  background: var(--color-accent);
+  color: white;
+}
+
+/* Кнопка «Назад» внизу */
+.portfolio-back {
+  text-align: center;
+  animation: fadeUp 0.8s ease-out;
+  animation-delay: 0.6s;
+}
+
+/* ============================================
    АДАПТИВ — на маленьких экранах (телефоны)
-   @media — это как «если экран меньше 480px, 
+   @media — это как «если экран меньше 480px,
    то применить эти стили»
    ============================================ */
 @media (max-width: 480px) {
@@ -225,7 +339,12 @@ body {
   }
 
   .links {
-    flex-direction: column;    /* кнопки друг под другом */
+    flex-direction: column;
     gap: 12px;
+  }
+
+  /* Карточки портфолио на телефоне — в одну колонку */
+  .portfolio-card {
+    width: 100%;
   }
 }

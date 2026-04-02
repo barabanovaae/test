@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Афина — дизайнер и не только</title>
+  <title>Афина — Портфолио</title>
 
-  <!-- Подключаем красивые шрифты из Google Fonts (бесплатно) -->
+  <!-- Подключаем красивые шрифты из Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- Подключаем наш файл со стилями -->
@@ -13,50 +13,112 @@
 </head>
 <body>
 
-  <div class="card">
+  <!-- Обёртка всей страницы портфолио -->
+  <div class="portfolio-page">
 
-    <!-- Аватар: замени эмодзи на <img src="photo.jpg"> когда будет фото -->
-    <div class="avatar">✦</div>
+    <!-- Заголовок страницы -->
+    <header class="portfolio-header">
+      <h1 class="name">Портфолио</h1>
+      <p class="tagline">Веб-дизайн · UX/UI Дизайн</p>
+      <p class="bio">
+        Мои работы и проекты. Учусь создавать красивые и удобные вещи в вебе.
+        Верстаю на HTML и CSS, изучаю дизайн и мечтаю делать интерфейсы,
+        которыми приятно пользоваться.
+      </p>
+    </header>
 
-    <h1 class="name">Портфолио</h1>
-    <p class="tagline">Веб-дизайн~UX UI Дизайн</p>
+    <!-- Сетка карточек на флексах -->
+    <div class="portfolio-grid">
 
-    <p class="bio">
-      
-      Учусь создавать красивые и удобные вещи в вебе. Верстаю на HTML и CSS,
-      изучаю дизайн и мечтаю делать интерфейсы, которыми приятно пользоваться. 
-    
-    </p>
-
-    <div class="tags">
-      <span class="tag">HTML</span>
-      <span class="tag">CSS</span>
-      <span class="tag">Web Design</span>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="dream">
-      <div class="dream-label">Цель</div>
-      <div class="dream-text">
-        Поступить в университет в США и стать дизайнером,
-        который создаёт продукты для людей по всему миру 🌎
+      <!-- Карточка 1 -->
+      <div class="portfolio-card">
+        <div class="portfolio-card-icon">🌐</div>
+        <h2 class="portfolio-card-title">Лендинг недвижимости</h2>
+        <p class="portfolio-card-desc">
+          Премиальная посадочная страница для агентства недвижимости с адаптивной вёрсткой.
+        </p>
+        <div class="portfolio-card-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+        </div>
+        <a href="https://v0-premium-real-estate-landing-page.vercel.app/" class="portfolio-card-link">Смотреть</a>
       </div>
-    </div>
-    
-    <div class="web-works">
-      <a href="">fkjeirwg</a>
+
+      <!-- Карточка 2 -->
+      <div class="portfolio-card">
+        <div class="portfolio-card-icon">🎨</div>
+        <h2 class="portfolio-card-title">Личная визитка</h2>
+        <p class="portfolio-card-desc">
+          Персональная страница-визитка с информацией обо мне, навыках и целях.
+        </p>
+        <div class="portfolio-card-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+        </div>
+        <a href="index.html" class="portfolio-card-link">Смотреть</a>
+      </div>
+
+      <!-- Карточка 3 -->
+      <div class="portfolio-card">
+        <div class="portfolio-card-icon">📱</div>
+        <h2 class="portfolio-card-title">Мобильный дизайн</h2>
+        <p class="portfolio-card-desc">
+          Концепт мобильного приложения: экраны, кнопки и адаптивная навигация.
+        </p>
+        <div class="portfolio-card-tags">
+          <span class="tag">UX/UI</span>
+          <span class="tag">Figma</span>
+        </div>
+        <a href="#" class="portfolio-card-link">Скоро</a>
+      </div>
+
+      <!-- Карточка 4 -->
+      <div class="portfolio-card">
+        <div class="portfolio-card-icon">🛍</div>
+        <h2 class="portfolio-card-title">Интернет-магазин</h2>
+        <p class="portfolio-card-desc">
+          Макет интернет-магазина с каталогом товаров, корзиной и фильтрами.
+        </p>
+        <div class="portfolio-card-tags">
+          <span class="tag">Web Design</span>
+          <span class="tag">CSS</span>
+        </div>
+        <a href="#" class="portfolio-card-link">Скоро</a>
+      </div>
+
+      <!-- Карточка 5 -->
+      <div class="portfolio-card">
+        <div class="portfolio-card-icon">✏️</div>
+        <h2 class="portfolio-card-title">Блог о дизайне</h2>
+        <p class="portfolio-card-desc">
+          Шаблон блога с красивой типографикой, статьями и боковым меню.
+        </p>
+        <div class="portfolio-card-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+        </div>
+        <a href="#" class="portfolio-card-link">Скоро</a>
+      </div>
+
+      <!-- Карточка 6 -->
+      <div class="portfolio-card">
+        <div class="portfolio-card-icon">🎯</div>
+        <h2 class="portfolio-card-title">Дашборд</h2>
+        <p class="portfolio-card-desc">
+          Панель управления с графиками, таблицами и тёмной темой оформления.
+        </p>
+        <div class="portfolio-card-tags">
+          <span class="tag">UX/UI</span>
+          <span class="tag">Web Design</span>
+        </div>
+        <a href="#" class="portfolio-card-link">Скоро</a>
+      </div>
+
     </div>
 
-    <div class="site works">
-      <h1>Sites</h1>
-      <a href="https://v0-premium-real-estate-landing-page.vercel.app/">Сайт</a>
-    </div>
-    
-
-    <div class="links">
-      <a href="mailto:afina@example.com" class="link">Написать</a>
-       <a href="index.html" class="link">Назад</a>
+    <!-- Кнопка назад -->
+    <div class="portfolio-back">
+      <a href="index.html" class="link">Назад</a>
     </div>
 
   </div>
