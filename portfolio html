@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Афина — дизайнер и не только</title>
+
+  <!-- Подключаем красивые шрифты из Google Fonts (бесплатно) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Подключаем наш файл со стилями -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+
+    <!-- Аватар: замени эмодзи на <img src="photo.jpg"> когда будет фото -->
+    <div class="avatar">✦</div>
+
+    <h1 class="name">Афина</h1>
+    <p class="tagline">Дизайн · Языки</p>
+
+    <p class="bio">
+      
+      Учусь создавать красивые вещи в вебе. Верстаю на HTML и CSS,
+      изучаю дизайн и мечтаю делать интерфейсы, которыми приятно пользоваться.
+      А ещё играю в волейбол и учу языки — English,France & Español.
+    
+    </p>
+
+    <div class="tags">
+      <span class="tag">HTML</span>
+      <span class="tag">CSS</span>
+      <span class="tag">Web Design</span>
+      <span class="tag">Volleyball</span>
+      <span class="tag">English</span>
+      <span class="tag">Español</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="dream">
+      <div class="dream-label">Цель</div>
+      <div class="dream-text">
+        Поступить в университет в США и стать дизайнером,
+        который создаёт продукты для людей по всему миру 🌎
+      </div>
+    </div>
+
+    <div class="links">
+      <a href="mailto:afina@example.com" class="link">Написать</a>
+      <a href="#" class="link">Портфолио</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
